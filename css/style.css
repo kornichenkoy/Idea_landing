@@ -519,3 +519,6 @@ footer {
   height: 100vh;
 }
 
+.jumbotron {
+  background: url(../img/1.jpg) no-repeat center bottom / cover;
+}
