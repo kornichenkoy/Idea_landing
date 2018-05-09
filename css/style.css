@@ -378,7 +378,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
 	font-size: 54px;
-	line-height: 1.16em;
+  line-height: 1.16em;
+  margin-bottom: 0.3em;
 }
 
 h2 {
@@ -411,7 +412,18 @@ p {
 	font-weight: 300;
 	font-size: 12px;
 	line-height: 1.5em;
-	color: white;
+  color: white;
+  margin-bottom: 2em;
+}
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child {
+  margin-bottom: 0;
 }
 
 /* 
@@ -431,11 +443,12 @@ p {
 	text-decoration: none;
 	vertical-align: top;
 	font-size: 12px;
-	line-height: 1em;
+  line-height: 1em;
+  letter-spacing: 0.6px;
 }
 
 .btn-outline {
-	border: 1px solid transparent;
+	border: 2px solid transparent;
 	padding: 12px 24px;
 	transition: color .2s ease, border-color .2s ease;
 }
@@ -489,6 +502,13 @@ p {
 	background-color: #bbbbbb;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 30px;
+  width: 840px;
+}
+
 .top-line {
   position: absolute;
   left: 0;
@@ -515,9 +535,25 @@ p {
 
 section, 
 footer {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .jumbotron {
   background: url(../img/1.jpg) no-repeat center bottom / cover;
 }
+
+.jumbotron .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.jumbotron .section-text {
+  padding: 80px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
