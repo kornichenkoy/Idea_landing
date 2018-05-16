@@ -522,14 +522,6 @@ p:last-child {
   clear: both;
 }
 
-.items:after {
-  content: "";
-  display: table;
-  width: 100%;
-  height: 0;
-  clear: both;
-}
-
 .top-line {
   position: absolute;
   left: 0;
@@ -638,10 +630,19 @@ footer {
   bottom: 165px;
 }
 
+.items {
+  display: flex;
+  align-items: flex-end;
+}
+
 .usefull_item {
-  width: 70px;
-  float: left;
+  min-width: 10%;
   text-align: center;
+}
+
+.usefull .items img {
+  display: block;
+  margin: 0 auto 10px;
 }
 
 .usefull .col {
@@ -650,12 +651,15 @@ footer {
 
 .usefull .with-image img {
   position: absolute;
-  right: 210px;
-  bottom: 72px;
+  right: 15.3%;
   top: 50%;
   transform: translateY(-50%);
 }
 
 .craft {
   background-color: #323c6d;
+}
+
+.craft .with-text {
+  
 }
