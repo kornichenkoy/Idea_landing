@@ -546,6 +546,20 @@ p:last-child {
   cursor: pointer;
 }
 
+.top-line.white .white-logo,
+.top-line.white .white-menu,
+.top-line.dark .dark-logo,
+.top-line.dark .dark-menu {
+	display: block;
+}
+
+.top-line.white .dark-logo,
+.top-line.white .dark-menu,
+.top-line.dark .white-logo,
+.top-line.dark .white-menu {
+	display: none;
+}
+
 section, 
 footer {
   min-height: 100vh;
@@ -652,6 +666,7 @@ footer {
 .usefull-item {
   min-width: 10%;
   text-align: center;
+  padding: 0 15px;
 }
 
 .usefull .items img {
@@ -784,6 +799,13 @@ footer {
 
 .social-list img {
 	max-width: 15px;
+	opacity: 1;
+	transition: opacity .2s ease;
+	backface-visibility: hidden;
+}
+
+.social-list a:hover img {
+	opacity: 0.6;
 }
 
 .form-fields {
@@ -847,3 +869,4 @@ textarea:-moz-placeholder {
 textarea:-ms-input-placeholder {
 	color:#ffffff;
 }
+
