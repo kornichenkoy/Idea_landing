@@ -609,6 +609,23 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+}
+
+.usefull:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.usefull > * {
+	position: relative;
+	z-index: 2;
 }
 
 .usefull h3 {
@@ -622,12 +639,7 @@ footer {
 .usefull .container {
   display: flex;
   flex-wrap: wrap;
-}
-
-.usefull .with-text {
-  position: absolute;
-  left: 140px;
-  bottom: 165px;
+  width: 940px;
 }
 
 .items {
@@ -635,7 +647,7 @@ footer {
   align-items: flex-end;
 }
 
-.usefull_item {
+.usefull-item {
   min-width: 10%;
   text-align: center;
 }
@@ -646,20 +658,58 @@ footer {
 }
 
 .usefull .col {
-  width: 70%;
+  width: 50%;
+}
+
+.usefull .with-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .usefull .with-image img {
-  position: absolute;
-  right: 15.3%;
-  top: 50%;
-  transform: translateY(-50%);
+	display: block;
+	margin-left: auto;
 }
 
 .craft {
   background-color: #323c6d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.craft .with-text {
+.craft .container {
+	display: flex;
+	flex-wrap: wrap;
+  }
   
+.craft-text {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.craft-text .col {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.craft-text .col-small {
+  max-width: 28%;
+}
+
+.craft-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.craft-icons-item {
+  text-align: center;
+  padding: 0 15px;
+}
+
+.craft .craft-icons-item img {
+  display: block;
+  margin: 0 auto 20px;
 }
