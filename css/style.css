@@ -612,7 +612,8 @@ footer {
   position: relative;
 }
 
-.usefull:before {
+.usefull:before,
+.contact:before {
   content: "";
   position: absolute;
   top: 0;
@@ -623,7 +624,8 @@ footer {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-.usefull > * {
+.usefull > *,
+.contact > * {
 	position: relative;
 	z-index: 2;
 }
@@ -712,4 +714,136 @@ footer {
 .craft .craft-icons-item img {
   display: block;
   margin: 0 auto 20px;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	background: url(../img/3.jpg) no-repeat center center / cover;
+}
+
+.contact .container {
+	width: 940px;
+}
+
+.contact .col {
+	float: left;
+	padding: 0 20px;
+	width: 50%;
+}
+
+.flex-row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+}
+
+.flex-col {
+	flex: 1;
+	padding: 0 15px;
+}
+
+.section-title {
+	margin-bottom: 22px;
+}
+
+.follow {
+	margin-top: 40px;
+}
+
+.social-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 0;
+	letter-spacing: -1px;
+}
+
+.social-list > * {
+	font-size: 1rem;
+	letter-spacing: normal;
+}
+
+.social-list li {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 10px 10px 0;
+}
+
+.social-list li:last-child {
+	margin-right: 0;
+}
+
+.social-list a, 
+.social-list img {
+	display: block;
+	width: 100%;
+}
+
+.social-list img {
+	max-width: 15px;
+}
+
+.form-fields {
+	margin-bottom: 20px;
+}
+
+input,
+textarea {
+	font-size: 12px;
+	font-family: "Poppins", sans-serif;
+	padding: 0;
+	-webkit-appearance: none;
+	display: block;
+	background: transparent;
+	color: #fff;
+	width: 100%;
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid #fff;
+	outline: none;
+}
+
+input {
+	height: 30px;
+}
+
+textarea {
+	height: 100px;
+	margin-bottom: 35px;
+	resize: none;
+}
+
+input::-webkit-input-placeholder {
+	color:#ffffff;
+}
+
+input::-moz-placeholder {
+	color:#ffffff;
+}
+
+input:-moz-placeholder {
+	color:#ffffff;
+}
+
+input:-ms-input-placeholder {
+	color:#ffffff;
+}
+
+textarea::-webkit-input-placeholder {
+	color:#ffffff;
+}
+
+textarea::-moz-placeholder {
+	color:#ffffff;
+}
+
+textarea:-moz-placeholder {
+	color:#ffffff;
+}
+
+textarea:-ms-input-placeholder {
+	color:#ffffff;
 }
