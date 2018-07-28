@@ -512,6 +512,7 @@ p:last-child {
   margin-right: auto;
   padding: 0 30px;
   width: 840px;
+  min-width: 320px !important;
 }
 
 .container:after {
@@ -564,7 +565,7 @@ section,
 footer {
   min-height: 100vh;
   position: relative;
-  padding: 80px 0;
+  /* padding: 80px 0; */
 }
 
 .jumbotron {
@@ -870,3 +871,236 @@ textarea:-ms-input-placeholder {
 	color:#ffffff;
 }
 
+@media screen and (min-width: 840px) and (max-width: 950px) {
+	.usefull .with-image img {
+		margin-right: auto;
+	}
+
+	.usefull .container {
+		padding: 0 70px;
+	}
+
+	.designs .col.with-text {
+		padding-left: 5%;
+		padding-right: 30px;
+	}
+}
+
+@media screen and (max-width: 940px) {
+	.usefull .container,
+	.contact .container {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 540px) and (max-width: 939px) {
+	.designs .with-image img {
+		width: 55vw;
+	}
+
+	.designs .container {
+		padding: 0 60px;
+	}
+}
+
+@media screen and (max-width: 840px) {
+	.container{
+		width: 100%;
+	}
+	
+	.jumbotron {
+		background: url(../img/1.jpg) no-repeat left bottom / cover;
+	}
+
+	.contact .form .form-fields {
+		flex-direction: column;
+	}
+
+}
+
+@media screen and (min-width: 540px) and (max-width: 839px) {
+	
+	h1 {
+		font-size: 34px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	h3 {
+		font-size: 18px;
+	}
+
+	h4 {
+		font-size: 16px;
+	}
+
+	h5 {
+		font-size: 14px;
+	}
+
+	h6 {
+		font-size: 12px;
+	}
+
+	.usefull .with-image img {
+		width: 30vw;
+		margin-right: auto;
+	}
+
+	.usefull .container {
+		padding: 0 46px;
+	}
+
+	.craft-text .col-small {
+		max-width: 35%;
+	}
+
+	.contact .form-fields .flex-col {
+		margin-bottom: 20px;
+	}
+
+}
+
+@media screen and (max-width: 540px) {
+
+	h1 {
+		font-size: 26px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	h3 {
+		font-size: 18px;
+	}
+
+	h4 {
+		font-size: 16px;
+	}
+
+	h5 {
+		font-size: 14px;
+	}
+
+	h6 {
+		font-size: 12px;
+	}
+
+	p {
+		/* font-size: 10px; */
+	}
+
+	.designs .with-image img {
+		position: static;
+		margin-left: -30px;
+		transform: none;
+	}
+
+	.designs .col {
+		width: 100%;
+	}
+
+	.designs h2 {
+		margin-bottom: 1em;
+	}
+
+	.designs h2 br {
+		display: none;
+	}
+
+	.designs .col.with-text {
+		padding-left: 10%;
+		padding-top: 40px;
+		padding-right: 10%;
+		text-align: center;
+	}
+
+	.usefull .with-image img {
+		display: none;
+	}
+
+	.usefull .col {
+		width: 98%;
+		text-align: center;
+	}
+
+	.usefull h3 {
+		margin-bottom: 1em;
+	}
+
+	.usefull h3 br {
+		display: none;
+	}
+
+	.items {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.craft-text {
+		flex-direction: column;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	
+	.craft-text .col:first-child {
+		margin-bottom: 15px;
+	}
+
+	.craft-text .col {
+		padding: 4px 20px;
+	}
+
+	.craft-text .col-small {
+		max-width: 100%;
+	}
+
+	.craft-icons {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.craft-icons-item {
+		text-align: center;
+		padding: 0px 14px;
+		margin-bottom: 20px;
+	}
+
+	.craft .craft-icons-item img {
+		margin: 0 auto 14px;
+	}
+
+	.contact .col {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	.contact .col:first-child {
+		margin-bottom: 20px;
+	}
+
+	.section-title {
+		margin-bottom: 10px;
+	}
+
+	.contact .col p {
+		margin-bottom: 8px;
+	}
+
+	.follow {
+		margin-top: 2px;
+	}
+
+	.contact .col .form textarea {
+		height: 50px;
+		margin-bottom: 12px;
+	}
+
+	.contact .form-fields .flex-col {
+		margin-bottom: 10px;
+	}
+}
